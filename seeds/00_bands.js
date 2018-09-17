@@ -15,6 +15,16 @@ exports.seed = function(knex, Promise) {
           message: 'Will play for free',
           booked: true
         },
+        {
+          band_name: 'Cycles',
+          genre: 'Rock, Jam',
+          website: 'http://cycles.band/cycles/',
+          date: '10/04/2018',
+          location: 'Boulder, CO',
+          email: 'cyclesband@test.com',
+          message: 'Will not play for free',
+          booked: false
+        }
       ]);
     });
 };
