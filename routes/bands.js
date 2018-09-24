@@ -9,8 +9,8 @@ router.get("/bands", (request, response, next) => {
   }).catch(next);
 });
 
-router.get("/bands/:id", (request, response, next) => {
-  queries.read("bands", request.params.id).then(bands => {
+router.get("/bands/:band_name", (request, response, next) => {
+  queries.read("bands", request.params.band_name).then(bands => {
       bands
           ? response.json({bands})
           : response.status(404).json({message: 'Not found'})
