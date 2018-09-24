@@ -6,7 +6,7 @@ module.exports = {
   },
 
   read(tableName, id) {
-    return database(tableName).select('*').where('id', id).first()
+    return database(tableName).select('*').where('band_name', id).first()
   },
 
   create(tableName, item) {
